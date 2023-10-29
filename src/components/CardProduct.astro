@@ -1,11 +1,10 @@
 ---
-const {img, title, description, price} = Astro.props
+const {img, title, price} = Astro.props
 ---
 
 <div class="border rounded justify-center p-3 text-center">
-  <img class="h-52 rounded" src={img} alt="foto">
-  <p class="fs-3 text-center" >{title}</p>
-  <p class="text-secondary text-center">{description}</p>
-  <p class="text-secondary text-center">$ {price}</p>
-  <button class="border rounded p-4">Agregar</button>
+  <img class="h-52 w-40 object-cover rounded" src={img} alt="foto">
+  <p class="fs-3 text-center text-xl mt-2" >{title}</p>
+  <p class="text-secondary text-center text-green-600 font-semibold">$ {price}</p>
+  <button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
 </div>

@@ -4,29 +4,98 @@ import CardProduct from "../components/CardProduct.astro"
 ---
 
 <AppLayout title="Carrito de compras">
-	<section>
-		<h3 class="text-xl mb-3 font-semibold">Productos:</h3>
-		<div class="products flex gap-3 justify-center">
-			<CardProduct
-				img="/images/product1.jpg"
-				title="Producto 1"
-				price="175"
-			/>
-			<CardProduct
-				img="/images/product1.jpg"
-				title="Producto 1"
-				price="175"
-			/>
-			<CardProduct
-				img="/images/product1.jpg"
-				title="Producto 1"
-				price="175"
-			/>
+	<div class="titles flex d-flex justify-between">
+		<h3 class="text-2xl mb-3 font-semibold text-blue-900">Productos:</h3>
+		<h3 class="text-2xl mb-3 font-semibold text-red-900">Carrito:</h3>
+		</div>
+	<section class="flex d-flex">
+		<div class="products flex gap-3 justify-center flex-wrap">
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product1.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Tónico facial</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 175</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product2.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Aceite hidratante</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 115</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product3.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Asics Gel-Kayano</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 1500</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product4.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Chanel No. 5</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 3600</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product5.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Apple Watch</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 2100</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product6.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Exfoliante suave</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 310</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product7.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Nike Metcon</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 1800</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product8.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">AirPods Pro</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 1000</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product9.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">MacBook Air</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 16000</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product10.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Jabra Elite</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 2300</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product11.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">iPhone 13 Pro</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 5500</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
+			<div class="border rounded justify-center p-3 text-center">
+				<img class="h-52 w-40 object-cover rounded" src='/images/product12.jpg' alt="foto">
+				<p class="fs-3 text-center text-xl mt-2">Nike Air Max</p>
+				<p class="text-secondary text-center text-green-600 font-semibold">$ 3100</p>
+				<button class="btn-add border rounded p-1 mt-1 w-full bg-gray-100">Agregar</button>
+			</div>
 		</div>
 
-		<h3 class="text-xl mb-3 font-semibold">Carrito:</h3>
-		<div class="cart">
-
+		<div class="cart border p-12 rounded">
+			
 		</div>
 	</section>
 </AppLayout>
+
+<script>
+	const btnAdd = document.querySelectorAll('.btn-add')
+	const cart = document.querySelectorAll('.cart')
+	let productsArray = [];
+
+	btnAdd.addEventListener('click', () => {
+		console.log('Hola');
+  })
+</script>
